@@ -216,12 +216,27 @@ public class Lab2_JoshuaMartinez {
 
             if (opcion == 3) {
                 contador = 1;
-                String Nombre, contraseña;
+                String Nombre, Contraseña;
+                String nombre = "leobanegas", contraseña = "99";
                 System.out.print("Ingrese Nombre usuario: ");
                 Nombre = input.next();
 
                 System.out.print("Ingrese contraseña: ");
-                contraseña = input.next();
+                Contraseña = input.next();
+                int cont = 0;
+                while (cont == 0) {
+                    if (nombre.equalsIgnoreCase(Nombre) && contraseña.equalsIgnoreCase(Contraseña)) {
+                        cont = 1;
+                    } else {
+                        System.out.print("Ingrese Nombre usuario: ");
+                        Nombre = input.next();
+
+                        System.out.print("Ingrese contraseña: ");
+                        Contraseña = input.next();
+                    }
+
+                }
+
             }
         }
     }
