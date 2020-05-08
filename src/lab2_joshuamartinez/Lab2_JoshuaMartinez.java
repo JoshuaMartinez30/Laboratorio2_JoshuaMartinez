@@ -94,7 +94,99 @@ public class Lab2_JoshuaMartinez {
                             }
                             break;
 
-                        
+                        case 3:
+                            for (Object t : casas) {
+                                if (t instanceof Registro_casas) {
+                                    System.out.println(casas.indexOf(t) + ")  " + t);
+                                }
+                            }
+                            int pos2;
+                            System.out.print("Ingrese la posicion de la casa que desee modificar: ");
+                            pos2 = input.nextInt();
+                            if (casas.get(pos2) instanceof Registro_casas) {
+                                int modificar;
+                                System.out.println("1. Modificar Numero de casa ");
+                                System.out.println("2. Modificar Numero de bloque ");
+                                System.out.println("3. Modificar color ");
+                                System.out.println("4. Modificar Ancho ");
+                                System.out.println("5. Modificar Largo ");
+                                System.out.println("6. Modificar (Si o no) fue comprada ");
+                                System.out.println("7. Modificar Numero de pisos ");
+                                System.out.println("8. Modificar Numero de baños ");
+                                System.out.println("9. Modificar Numero de cuartos ");
+                                System.out.println("10. Modificar nombre del dueño ");
+                                System.out.println("11. Modificar nombre del ingeniero ");
+                                modificar = input.nextInt();
+                                if (modificar == 1) {
+                                    int nuevo_n;
+                                    System.out.print("Ingrese nuevo numero de casa: ");
+                                    nuevo_n = input.nextInt();
+                                    ((Registro_casas) casas.get(pos2)).setCasa(nuevo_n);
+                                }
+                                if (modificar == 2) {
+                                    int nuevo_b;
+                                    System.out.print("Ingrese nuevo numero de bloque: ");
+                                    nuevo_b = input.nextInt();
+                                    ((Registro_casas) casas.get(pos2)).setBloque(nuevo_b);
+                                }
+                                if (modificar == 3) {
+                                    String nuevo_c;
+                                    System.out.print("Ingrese nuevo color: ");
+                                    nuevo_c = input.next();
+                                    ((Registro_casas) casas.get(pos2)).setColor(nuevo_c);
+                                }
+                                if (modificar == 4) {
+                                    int nuevo_a;
+                                    System.out.print("Ingrese nuevo ancho: ");
+                                    nuevo_a = input.nextInt();
+                                    ((Registro_casas) casas.get(pos2)).setAncho(nuevo_a);
+                                }
+                                if (modificar == 5) {
+                                    int nuevo_l;
+                                    System.out.print("Ingrese nuevo largo: ");
+                                    nuevo_l = input.nextInt();
+                                    ((Registro_casas) casas.get(pos2)).setLargo(nuevo_l);
+                                }
+                                if (modificar == 6) {
+                                    String nuevo_comprada;
+                                    System.out.print("Ingrese (si o no) fue comprada ");
+                                    nuevo_comprada = input.next();
+                                    ((Registro_casas) casas.get(pos2)).setComprada(nuevo_comprada);
+                                }
+                                if (modificar == 7) {
+                                    int nuevo_p;
+                                    System.out.print("Ingrese nuevo numero de pisos: ");
+                                    nuevo_p = input.nextInt();
+                                    ((Registro_casas) casas.get(pos2)).setPisos(nuevo_p);
+                                }
+                                if (modificar == 8) {
+                                    int nuevo_b;
+                                    System.out.print("Ingrese nuevo numero de baños: ");
+                                    nuevo_b = input.nextInt();
+                                    ((Registro_casas) casas.get(pos2)).setBaños(nuevo_b);
+                                }
+                                if (modificar == 9) {
+                                    int nuevo_cuartos;
+                                    System.out.print("Ingrese nuevo numero de cuartos: ");
+                                    nuevo_cuartos = input.nextInt();
+                                    ((Registro_casas) casas.get(pos2)).setCuartos(nuevo_cuartos);
+                                }
+                                if (modificar == 10) {
+                                    String nuevo_d;
+                                    System.out.print("Ingrese nuevo nombre del dueño: ");
+                                    nuevo_d = input.next();
+                                    ((Registro_casas) casas.get(pos2)).setNombre(nuevo_d);
+                                }
+                                if (modificar == 11) {
+                                    String nuevo_i;
+                                    System.out.print("Ingrese nuevo largo: ");
+                                    nuevo_i = input.next();
+                                    ((Registro_casas) casas.get(pos2)).setIngeniero(nuevo_i);
+                                }
+
+                            }
+
+                            break;
 
                         case 4:
                             for (Object t : casas) {
