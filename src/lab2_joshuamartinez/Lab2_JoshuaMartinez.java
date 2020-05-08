@@ -86,7 +86,28 @@ public class Lab2_JoshuaMartinez {
                             System.out.println("Registro exitoso");
                             break;
 
+                        case 2:
+                            for (Object t : casas) {
+                                if (t instanceof Registro_casas) {
+                                    System.out.println(casas.indexOf(t) + ")  " + t);
+                                }
+                            }
+                            break;
+
                         
+
+                        case 4:
+                            for (Object t : casas) {
+                                if (t instanceof Registro_casas) {
+                                    System.out.println(casas.indexOf(t) + ")  " + t);
+                                }
+                            }
+                            int pos;
+                            System.out.print("Ingrese la posicion de la casa que desea Eliminar: ");
+                            pos = input.nextInt();
+                            casas.remove(pos);
+                            System.out.println("Registro exitoso");
+                            break;
                     }
 
                 } else {
